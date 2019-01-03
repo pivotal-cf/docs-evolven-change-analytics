@@ -3,19 +3,47 @@ title: Using Evolven Change Analytics Service Broker for PCF
 owner: Partners
 ---
 
+This topic describes how to use Evolven Change Analytics Service Broker for PCF.
+
 ##<a id='using'></a> Using Evolven Change Analytics Service Broker for PCF
 
-The Evolven Change Analytics Service Broker for PCF collects inventory and configuration of 
-PCF platform and applications running on it out-of-the-box. 
-Each consecutive scan of the PCF environment detects new granular changes introduced in the inventory and configuration. 
-All of the collected information is reported to an Evolven Change Analytics Server that aggregates, 
-processes, and analyzes information collected by the Evolven Change Analytics Service Broker for PCF 
-and other types of Evolven collectors. 
+The Evolven Change Analytics Service Broker for PCF collects inventory and configuration of PCF platform and 
+applications running on it out-of-the-box. Each consecutive scan of the PCF environment detects new granular 
+changes introduced in the inventory and configuration. All of the collected information is reported to an Evolven 
+Change Analytics Server that aggregates, processes, and analyzes information collected by the Evolven Change 
+Analytics Service Broker for PCF and other types of Evolven collectors. 
 
-##<a id='using-analytics'></a> Using Evolven Change Analytics Server
+##<a id='accessing'></a>Accessing Evolven Change Analytics Server
+   There should be an Evolven Server installed so that the Service Broker can access it via HTTPS. During installation
+   of the Service Broker a URL of the Evolven Server should be defined as one of the installation parameters.
+   A user registered in the Evolven Change Analytics Server is required in order to view data reported by the 
+   Service Broker from PCF and execute analysis of this data. Log into the Evolven Server using such registered 
+   user to access functionality of Evolven Server.
 
-The Evolven Change Analytics Server controls the scope and schedule of collections. 
-Evolven administrators should access the Server Console to configure and to monitor collections. 
-Interactive analysis of the collected data is also available in the Evolven Change Analytics Server. 
-In order to learn more about the available functionality of Evolven Change Analytics, 
-please access the User Guide provided with the installation of the Evolven Change Analytics Server.  
+##<a id='collection'></a>Collection Administration
+   The Evolven Change Analytics Server controls the scope and schedule of collections. Evolven administrators 
+   should access the Server Console to configure and to monitor collections executed by Evolven Service Broker 
+   for PCF. It is possible to schedule collections with defined frequency within defined time windows. Alternatively,
+   collections can be executed on demand.
+
+   Evolven users and administrators can fine tune collections ensuring that they extract all the required data
+   correctly identifying the data that is noisy or insignificant. This can be achieved by customizing the Evolven Knowledgebase
+   and setting up data filters in Evolven Server.
+
+##<a id='interactive'></a>Interactive Analysis 
+   A user accessing Evolven Change Analytics Server can exercise the following functions from the Task Screen:
+   - Slice and dice detected changes and differences
+   - Analyze risk of detected changes and differences
+   - Compare configuration of applications or platform configuration between environments
+   - Detect root causes of investigated issues or problems
+   - Analyze changes bypassing defined processes
+
+##<a id='interactive'></a>Setting Offline Reports and Alerts
+   A user or administrator of Evolven Change Analytics Server can schedule offline reports and set up alerts in the Server
+   Console. Report generation can be based on pre-defined templates or you can define custom templates. Reports can be
+   generated on-demand as well. 
+
+In order to learn more about the available functionality of Evolven Change Analytics, please access the User Guide 
+provided with the installation of the Evolven Change Analytics Server.  
+
+
