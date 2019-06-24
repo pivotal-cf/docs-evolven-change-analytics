@@ -1,24 +1,24 @@
 ---
-title: Evolven Change Analytics Service Broker for PCF (Beta)
+title: Evolven Change Analytics for PCF (Beta)
 owner: Partners
 ---
 
 <p class="note warning">
 <strong>WARNING! </strong>
-The Evolven Change Analytics Service Broker for PCF tile is currently in beta and is intended for evaluation and test purposes only. 
+The Evolven Change Analytics for PCF tile is currently in beta and is intended for evaluation and test purposes only. 
 Do not use this product in a PCF production environment.
 </p>
 
 
-This documentation describes the Evolven Change Analytics Service Broker for Pivotal Cloud Foundry (PCF). The 
-Evolven Change Analytics Service Broker for PCF collects inventory and configuration of the PCF platform and
+This documentation describes the Evolven Change Analytics for Pivotal Cloud Foundry (PCF). The 
+Evolven Change Analytics agent for PCF collects inventory and configuration of the PCF platform and
 applications running on this platform. It also detects and reports changes in the collected configuration. 
 
 
 ## <a id='overview'></a>Overview
 
-The Evolven Change Analytics Service Broker for PCF includes a configuration collector that connects to PCF and 
-regularly scans the platform and applications running on it. The Service Broker reports collected data and 
+The Evolven Change Analytics agent for PCF includes a configuration collector that connects to PCF and 
+regularly scans the platform and applications running on it. The agent reports collected data and 
 detected changes to a central Evolven Change Analytics Server that consolidates, cleans, correlates, and analyzes all 
 the collected information. 
 
@@ -30,7 +30,7 @@ across multiple environments.
 
 ## <a id='features'></a>Key Features
 
-Evolven Change Analytics Service Broker for PCF includes the following key features:
+Evolven Change Analytics for PCF includes the following key features:
 
 * Granular collection of inventory and configuration of applications running on PCF
 * Granular collection of inventory and configuration of the PCF platform
@@ -38,22 +38,22 @@ Evolven Change Analytics Service Broker for PCF includes the following key featu
 
 ## <a id="snapshot"></a>Product Snapshot
 
-The following table provides version and version-support information about Evolven Change Analytics Service Broker for PCF.
+The following table provides version and version-support information about Evolven Change Analytics for PCF.
 
 <table class="nice">
     <th>Element</th>
     <th>Details</th>
     <tr>
         <td>Tile version</td>
-        <td>6.2.7</td>
+        <td>1.0.3</td>
     </tr>
     <tr>
         <td>Release date</td>
-        <td>March 7, 2019</td>
+        <td>June 24, 2019</td>
     </tr>
     <tr>
         <td>Software component version</td>
-        <td>6.2.6</td>
+        <td>6.2.7</td>
     </tr>
     <tr>
         <td>Compatible Ops Manager version(s)</td>
@@ -77,7 +77,7 @@ The following table provides version and version-support information about Evolv
     </tr>
 </table>
 <p class="note warning"><strong> WARNING:</strong>
-Evolven Change Analytics Service Broker for PCF v6.2.6
+Evolven Change Analytics for PCF v6.2.6
 and earlier require a Ubuntu Trusty stemcell.
 The end-of-life date for Ubuntu Trusty is April 2019.
 If a security vulnerability is found on this stemcell after April, it will not be fixed.</p>
@@ -87,9 +87,9 @@ If a security vulnerability is found on this stemcell after April, it will not b
 ## <a id="reqs"></a>Requirements
 
 
-Evolven Change Analytics Service Broker for PCF has the following requirements:
+Evolven Change Analytics for PCF has the following requirements:
 
-+ The Service Broker operates only when connected to the Evolven Change Analytics Server 
++ The agent operates only when connected to the Evolven Change Analytics Server 
   deployed separately, outside of the PCF environment.
 
 ## <a id="feedback"></a>Feedback
@@ -99,6 +99,6 @@ If you have a feature request, questions, or information about a bug, please ema
 
 ## <a id='license'></a>License
 
-Before deploying Evolven Change Analytics Service Broker for PCF, you must procure an Evolven License for your 
-Service Broker deployment and for Evolven Change Analytics Server. For more information about Evolven
+Before deploying Evolven Change Analytics for PCF, you must procure an Evolven License for your 
+agent deployment in PCF and for Evolven Change Analytics Server. For more information about Evolven
 License, please contact [sales@evolven.com](mailto:sales@evolven.com).
