@@ -1,29 +1,29 @@
 ---
-title: Using Evolven Change Analytics Service Broker for PCF
+title: Using Evolven Change Analytics for PCF
 owner: Partners
 ---
 
-This topic describes how to use Evolven Change Analytics Service Broker for PCF.
+This topic describes how to use Evolven Change Analytics for PCF.
 
-##<a id='using'></a> About Evolven Change Analytics Service Broker for PCF
+##<a id='using'></a> About Evolven Change Analytics for PCF
 
-The Evolven Change Analytics Service Broker for PCF collects inventory and configuration of PCF platform and 
+The Evolven Change Analytics for PCF collects inventory and configuration of PCF platform and 
 applications running on it out-of-the-box. Each consecutive scan of the PCF environment detects new granular 
 changes introduced in the inventory and configuration. All of the collected information is reported to an Evolven 
 Change Analytics Server that aggregates, processes, and analyzes information collected by the Evolven Change 
-Analytics Service Broker for PCF and other types of Evolven collectors. 
+Analytics for PCF and other types of Evolven collectors. 
 
 ##<a id='accessing'></a>About Accessing Evolven Change Analytics Server
-   There should be an Evolven Server installed so that the Service Broker can access it via HTTPS. During installation
-   of the Service Broker a URL of the Evolven Server should be defined as one of the installation parameters.
+   There should be an Evolven Server installed so that the agent can access it via HTTPS. During installation
+   of the tile a URL of the Evolven Server should be defined as one of the installation parameters.
    A user registered in the Evolven Change Analytics Server is required in order to view data reported by the 
-   Service Broker from PCF and execute analysis of this data. Log into the Evolven Server using such registered 
+   agent from PCF and execute analysis of this data. Log into the Evolven Server using such registered 
    user to access functionality of Evolven Server.
 
 ##<a id='collection'></a>Collection Administration
    The Evolven Change Analytics Server controls the scope and schedule of collections. Evolven administrators 
-   should access the Server Console to configure and to monitor collections executed by Evolven Service Broker 
-   for PCF. It is possible to schedule collections with defined frequency within defined time windows. Alternatively,
+   should access the Server Console to configure and to monitor collections. 
+   It is possible to schedule collections with defined frequency within defined time windows. Alternatively,
    collections can be executed on demand.
 
    Evolven users and administrators can fine tune collections ensuring that they extract all the required data
