@@ -1,11 +1,11 @@
 ---
-title: Installing and Configuring Evolven Change Analytics for PCF
+title: Installing and Configuring Evolven Change Analytics for VMware Tanzu
 owner: Partners
 ---
 
-This topic describes how to install and configure Evolven Change Analytics for PCF.
+This topic describes how to install and configure Evolven Change Analytics for VMware Tanzu.
 
-##<a id='install'></a>Install and Configure Evolven Change Analytics for PCF
+##<a id='install'></a>Install and Configure Evolven Change Analytics for VMware Tanzu
 
 To install the Evolven Change Analytics tile in the Ops Manager Installation Dashboard, do the following:
 
@@ -13,25 +13,23 @@ To install the Evolven Change Analytics tile in the Ops Manager Installation Das
 
 1. Navigate to the Ops Manager Installation Dashboard and click **Import a Product** to upload the product file. 
 
-1. Under the **Import a Product** button, click **+** next to the version number of Evolven Change Analytics for PCF. 
+1. Under the **Import a Product** button, click **+** next to the version number of Evolven Change Analytics for VMware Tanzu. 
 This adds the tile to your staging area.
 
-1. Click the newly added **Evolven Change Analytics for PCF** tile.
+1. Click the newly added **Evolven Change Analytics for VMware Tanzu** tile.
 
 1. Click on **Evolven Agent Properties**.
 ![EvolvenProperties](./images/installation-page.JPG)
 
-1. Set the URL to an Evolven server that is reachable from PCF.
+1. Set the URL to an Evolven server that is reachable from VMware Tanzu.
 1. Set the Evolven server port.
 1. Set the Evolven agent name. **This cannot be changed after applying changes!**
 1. Set the Ops Manager URL.
-1. Set the Ops Manager UAA client id. **Ops Manager UAA client with opsman.full_view authoritiy (https://docs.pivotal.io/pivotalcf/2-5/customizing/opsman-users.html)**
+1. Set the Ops Manager UAA client id. **Ops Manager UAA client with opsman.full_view authoritiy (https://docs.pivotal.io/pivotalcf/2-10/customizing/opsman-users.html)**
 1. Set the Ops Manager UAA client secret.
-1. Set the PAS UAA client id. **PAS UAA client with cloud_controller.admin_read_only authoritiy (https://docs.cloudfoundry.org/uaa/uaa-user-management.html)**
-1. Set the PAS UAA client secret. 
+1. Set the TAS UAA client id. **TAS UAA client with cloud_controller.admin_read_only authoritiy (https://docs.cloudfoundry.org/uaa/uaa-user-management.html)**
+1. Set the TAS UAA client secret. 
 1. Click **Save**.
 
 1. Return to the Ops Manager Installation Dashboard and click **Apply changes**
-   to install Evolven Change Analytics for PCF tile.
-
-
+   to install Evolven Change Analytics for VMware Tanzu tile.
